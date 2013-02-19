@@ -1,0 +1,23 @@
+Host wadsup
+	HostName 50-56-235-194.static.cloud-ips.com
+	User joshsmith
+
+Host heroku.burnthis
+  HostName heroku.com
+  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.burnthis"
+  IdentitiesOnly yes
+
+Host heroku.personal
+  HostName heroku.com
+  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.personal"
+  IdentitiesOnly yes
+
+Host heroku.toptal
+  HostName heroku.com
+  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.toptal"
+  IdentitiesOnly yes
+
+Host heroku.toptal
+  HostName heroku.com
+  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.toptal"
+  IdentitiesOnly yes

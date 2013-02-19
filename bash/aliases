@@ -1,0 +1,27 @@
+# Directories
+alias ..='cd ..'
+alias cdd="cd -"
+
+# Git
+alias g='git status'
+alias ga='git add -A'
+alias gc='git commit -a -s'
+alias gcb='git checkout -b' # Check out a new branch
+alias hack='bash ~/hack.sh' # Hack on the branch
+alias ship='bash ~/ship.sh' # Ship the feature
+alias dwf='bash ~/dwf.sh'	# Delete the working feature
+alias hsd='hack && ship && dwf' # Hack, ship, delete
+alias prod='git push production'
+alias stage='git push staging'
+
+# Rspec
+alias rspec='rspec --color'
+
+# Node
+alias n='node'
+alias npmi='npm install'
+
+function take {
+	mkdir $1
+	cd $1
+}
