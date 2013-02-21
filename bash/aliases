@@ -11,8 +11,8 @@ alias hack='bash ~/hack.sh' # Hack on the branch
 alias ship='bash ~/ship.sh' # Ship the feature
 alias dwf='bash ~/dwf.sh'	# Delete the working feature
 alias hsd='hack && ship && dwf' # Hack, ship, delete
-alias prod='git push production'
-alias stage='git push staging'
+alias prod='git push production master'
+alias stage='git push staging master'
 
 # Rspec
 alias rspec='rspec --color'
