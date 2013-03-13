@@ -15,6 +15,12 @@ alias hsd='hack && ship && dwf' # Hack, ship, delete
 alias prod='git push production master'
 alias stage='git push staging master'
 
+# Rails
+alias migrate='rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare'
+alias m='migrate'
+alias rk='rake'
+alias z='zeus'
+
 function take {
   mkdir $1
   cd $1
