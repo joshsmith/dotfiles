@@ -1,2 +1,0 @@
-# Show smiley faces
-PS1="\u@\w \`if [ \$? = 0 ]; then echo -e '\[\e[01;32m\]\n\xE2\x98\xBA '; else echo -e '\[\e[01;31m\]\n\xE2\x98\xB9 '; fi\` \[\e[01;34m\]\[\e[00m\]"

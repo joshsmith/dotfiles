@@ -1,0 +1,5 @@
+. ~/bin/dotfiles/zsh/env
+. ~/bin/dotfiles/zsh/aliases
+. ~/bin/dotfiles/zsh/prompt
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
