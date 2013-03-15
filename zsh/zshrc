@@ -2,4 +2,8 @@
 . ~/bin/dotfiles/zsh/aliases
 . ~/bin/dotfiles/zsh/prompt
 
+# Boxen
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+# Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
