@@ -5,6 +5,9 @@
 # Boxen
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
+# Plugins
+plugins=(git osx ruby)
+
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
