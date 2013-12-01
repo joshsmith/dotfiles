@@ -21,6 +21,8 @@ alias m='migrate'
 alias rk='rake'
 alias z='zeus'
 
+alias rake='noglob rake'
+
 function take {
   mkdir $1
   cd $1

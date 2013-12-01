@@ -7,3 +7,10 @@
 
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+PATH=$PATH:$HOME/tools/code/bin
+PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
+# PATH=$PATH:/usr/local/Cellar/
+# PATH=$PATH:/usr/local/Cellar/postgresql/9.3.1/bin
+export PATH
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
