@@ -23,6 +23,9 @@ alias z='zeus'
 
 alias rake='noglob rake'
 
+# Code
+alias c='code'
+
 function take {
   mkdir $1
   cd $1
