@@ -11,6 +11,8 @@ plugins=(hub git osx ruby)
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
+source ~/.bin/tmuxinator.zsh
+
 PATH=$PATH:$HOME/tools/code/bin
 PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 # PATH=$PATH:/usr/local/Cellar/
