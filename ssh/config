@@ -13,9 +13,9 @@ Host heroku.personal
   IdentityFile "/Users/joshsmith/.ssh/identity.heroku.personal"
   IdentitiesOnly yes
 
-Host heroku.toptal
+Host heroku.reissued
   HostName heroku.com
-  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.toptal"
+  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.reissued”
   IdentitiesOnly yes
 
 Host heroku.toptal
