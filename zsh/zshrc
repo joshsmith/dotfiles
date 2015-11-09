@@ -8,10 +8,7 @@ plugins=(hub git osx ruby)
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-source ~/bin/tmuxinator.zsh
-
-# nvm
-source ~/.nvm/nvm.sh
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 PATH=$PATH:$HOME/tools/code/bin
 PATH=$PATH:$HOME/tools/franklin/bin
@@ -19,5 +16,8 @@ PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 # PATH=$PATH:/usr/local/Cellar/
 # PATH=$PATH:/usr/local/Cellar/postgresql/9.3.1/bin
 PATH=$PATH:/usr/local/bin/coffee
-PATH=$PATH:$HOME/path-you-cloned-code-to/code/bin
 export PATH
+
+source ~/bin/tmuxinator.zsh
+
+source $(brew --prefix nvm)/nvm.sh
