@@ -16,6 +16,7 @@ PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 # PATH=$PATH:/usr/local/Cellar/
 # PATH=$PATH:/usr/local/Cellar/postgresql/9.3.1/bin
 PATH=$PATH:/usr/local/bin/coffee
+PATH="./bin:$PATH"
 export PATH
 
 source ~/bin/tmuxinator.zsh
