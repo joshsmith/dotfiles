@@ -8,11 +8,7 @@ plugins=(hub git osx ruby)
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-PATH=$PATH:$HOME/tools/code/bin
-PATH=$PATH:$HOME/tools/franklin/bin
-PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
+PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 # PATH=$PATH:/usr/local/Cellar/
 # PATH=$PATH:/usr/local/Cellar/postgresql/9.3.1/bin
 PATH=$PATH:/usr/local/bin/coffee
@@ -21,11 +17,13 @@ export PATH
 
 source ~/bin/tmuxinator.zsh
 
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
 # added by travis gem
 [ -f /Users/joshsmith/.travis/travis.sh ] && source /Users/joshsmith/.travis/travis.sh
 
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use stable
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH="$HOME/.yarn/bin:$PATH"

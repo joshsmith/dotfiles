@@ -4,7 +4,7 @@ colors
 setopt prompt_subst
 
 # Editor
-export EDITOR='subl'
+export EDITOR='atom -w'
 
 # Git
 git config --global color.ui auto

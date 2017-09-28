@@ -2,29 +2,17 @@
 alias ..='cd ..'
 alias cdd="cd -"
 
+alias git=hub
+
 # Git
 alias g='git status'
 alias ga='git add -A'
 alias gc='git commit -a -s'
 alias gcm='git commit -am'
 alias gcb='git checkout -b' # Check out a new branch
-alias hack='bash ~/hack.sh' # Hack on the branch
-alias ship='bash ~/ship.sh' # Ship the feature
-alias dwf='bash ~/dwf.sh' # Delete the working feature
-alias hsd='hack && ship && dwf' # Hack, ship, delete
-alias prod='git push production master'
-alias stage='git push staging master'
 
-# Rails
-alias migrate='rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare'
-alias m='migrate'
-alias rk='rake'
-alias z='zeus'
-
+# Ruby
 alias rake='noglob rake'
-
-# Code
-alias c='code'
 
 function take {
   mkdir $1
