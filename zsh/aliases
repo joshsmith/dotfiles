@@ -10,9 +10,22 @@ alias ga='git add -A'
 alias gc='git commit -a -s'
 alias gcm='git commit -am'
 alias gcb='git checkout -b' # Check out a new branch
+# Prune squashed branches
+alias gpsq='git checkout -q develop && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base develop $branch) && [[ $(git cherry develop $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
+# Dry run of pruning squashed branches
+alias gpsqdry='git checkout -q develop && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base develop $branch) && [[ $(git cherry develop $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && echo "$branch is merged into develop and can be deleted"; done'
 
 # Ruby
 alias rake='noglob rake'
+
+# Erlang
+erlang () {
+    if [[ $@ == "-v" ]]; then
+        command erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), "releases", erlang:system_info(otp_release), "OTP_VERSION"])), io:fwrite(Version), halt().' -noshell
+    else
+        command erl
+    fi
+}
 
 function take {
   mkdir $1

@@ -1,34 +1,4 @@
-Host trainergy-blog
-  HostName git.wpengine.com
-  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.personal"
-  IdentitiesOnly yes
-
-Host heroku.burnthis
-  HostName heroku.com
-  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.burnthis"
-  IdentitiesOnly yes
-
 Host heroku.personal
   HostName heroku.com
   IdentityFile "/Users/joshsmith/.ssh/identity.heroku.personal"
-  IdentitiesOnly yes
-
-Host heroku.reissued
-  HostName heroku.com
-  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.reissued”
-  IdentitiesOnly yes
-
-Host heroku.toptal
-  HostName heroku.com
-  IdentityFile "/Users/joshsmith/.ssh/identity.heroku.toptal"
-  IdentitiesOnly yes
-
-Host getculinary-blog
-  HostName git.wpengine.com
-  IdentityFile "/Users/joshsmith/.ssh/wpengine.getculinary"
-  IdentitiesOnly yes
-
-Host getculinary-blog-github
-  HostName github.com
-  IdentityFile "/Users/joshsmith/.ssh/wpengine.getculinary"
   IdentitiesOnly yes
